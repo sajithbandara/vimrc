@@ -57,11 +57,29 @@ filetype plugin indent on    " required
 " enable syntax highlighting
 syntax enable
 
+" solarized stuff
 set background=dark
 colorscheme solarized
 
+" switch between light and dark
+call togglebg#map("<F5>")
+
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
+
+" ---------- airline ----------
+"  set airline theme
+let g:airline_theme='powerlineish'
+" powerline arrows
+"let g:airline_powerline_fonts = 1
+" show statusline
+set laststatus=2
+" airline tabs
+let g:airline#extensions#tabline#enabled = 1
+" airline syntax checker
+let g:airline#extensions#syntastic#enabled =  1
+
+"---------- end airline ----------
 
 " show line numbers
 set number
@@ -72,7 +90,7 @@ set showcmd
 " backspaces
 set backspace=indent,eol,start
 
-" ---------- PEP 8 ---------- 
+" ---------- PEP 8 ----------
 
 " set tabs to have 4 spaces
 set tabstop=4
@@ -89,7 +107,7 @@ set autoindent
 " when using the >> or << commands, shift lines by 4 spaces
 set shiftwidth=4
 
-" something here
+" wrap text after a set number of characters
 set textwidth=79
 
 " ---------- End PEP 8 ----------
