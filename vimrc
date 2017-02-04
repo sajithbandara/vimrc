@@ -1,5 +1,5 @@
 " fixes default font size
-set guifont=Consolas:h10
+set guifont=Sauce_Code_Powerline:h10
 " remove menu bar
 set guioptions-=m
 " remove toolbar
@@ -20,6 +20,7 @@ call vundle#begin('$USERPROFILE/vimfiles/bundle/')
 Plugin 'VundleVim/Vundle.vim'
 " file browsing
 Plugin 'kien/ctrlp.vim'
+" status bar
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " python syntax checker
@@ -69,7 +70,7 @@ let python_highlight_all = 1
 
 " ---------- airline ----------
 "  set airline theme
-let g:airline_theme='powerlineish'
+let g:airline_theme='badwolf'
 " powerline arrows
 "let g:airline_powerline_fonts = 1
 " show statusline
